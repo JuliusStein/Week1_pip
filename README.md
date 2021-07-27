@@ -15,6 +15,7 @@ To install this package and its dependencies in a new conda environment, simply 
 conda create -n week1 python=3.8 ipython jupyter notebook numpy scipy matplotlib pyaudio numba
 conda install -n week1 -c conda-forge librosa ffmpeg
 conda activate week1
+
 (week 1) pip install -e cogworks_week1
 ```
 
