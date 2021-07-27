@@ -1,29 +1,30 @@
-# Microphone
-
-Provides a simple interface for configuring and utilizing a microphone in Python.
-
-This package has been tested using Python 3.7, using conda 4.7.5, on both Mac and Windows 10.
-
-# Installing pyaudio (required dependency)
+# Installing this package (Mac/Linux)
+To install this package and its dependencies in a new conda environment, simply run:
 ```shell
-conda install pyaudio
-```
+conda create -n week1 python=3.8
+conda activate week1
 
-# Installing this package
-Once you have installed the dependencies, clone this repository, navigate to it, and run
-
-```shell
-pip install -e .
+(week1) pip install -e cogworks_week1
 ```
 It is important that you use this `develop` install option, as the microphone configuration requires that
 this package is installed in-place.
 
+# Installing this package (PC)
+To install this package and its dependencies in a new conda environment, simply run:
+```shell
+conda create -n week1 python=3.8 ipython jupyter notebook numpy scipy matplotlib pyaudio numba
+conda install -n week1 -c conda-forge librosa ffmpeg
+conda activate week1
+(week 1) pip install -e cogworks_week1
+```
+
 # Configuring Your Microphone
 
 Now we will configure `microphone` to use the appropriate microphone on your computer.
-Navigate to Microphone/microphone and run:
-```shell
-python configure_input.py
+Open the iPython console by running 'python', then run:
+```python
+from microphone import configure_input
+configure_input()
 ```
 and follow the selection prompt. This will save your microphone preference for future use. The resulting configuration file will be saved to `Microphone/microphone/config.ini`.
 The contents of the file will look something like this
@@ -38,8 +39,9 @@ You can edit [this file](https://github.com/CogWorksBWSI/Microphone/blob/master/
 
 # Testing Your Microphone
 Navigate to Microphone and run:
-```shell
-python test_input.py
+```python
+from microphone import test_input
+test_input()
 ```
 This should record and play back a brief audio clip using the microphone selected during configuration.
 
