@@ -8,7 +8,7 @@ setuptools.setup(
     version="1.2.1",
     author="Ryan Soklaski (@rsokl)",
     author_email="ry26099@mit.edu",
-    url="https://github.com/CogWorksBWSI/Microphone",
+    url="https://github.com/JuliusStein/Week1_pip",
     description="Provides simple interface for recording audio",
     long_description=long_description,
     long_description_content_type="text/markdown",
