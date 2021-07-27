@@ -39,7 +39,7 @@ index = 1
 You can edit [this file](https://github.com/CogWorksBWSI/Microphone/blob/master/microphone/config.py) to change the recording settings (e.g. the sampling rate) used to sampled audio from your microphone.
 
 # Testing Your Microphone
-Navigate to Microphone and run:
+Open the iPython console by running 'python', then run:
 ```python
 from microphone import test_input
 test_input()
