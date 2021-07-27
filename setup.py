@@ -4,8 +4,8 @@ with open("README.md", "r", encoding="utf-8") as fh:
     long_description = fh.read()
 
 setuptools.setup(
-    name="week1_test",
-    version="1.2.1",
+    name="cogworks_week1",
+    version="1.0.0",
     author="Ryan Soklaski (@rsokl)",
     author_email="ry26099@mit.edu",
     url="https://github.com/JuliusStein/Week1_pip",
