@@ -1,4 +1,4 @@
-# Installing this package (Mac/Linux)
+# Installing this package (Mac OS)
 To install this package and its dependencies in a new conda environment, simply run:
 ```shell
 conda create -n week1 python=3.8
@@ -9,7 +9,7 @@ conda activate week1
 It is important that you use this `develop` install option, as the microphone configuration requires that
 this package is installed in-place.
 
-# Installing this package (PC)
+# Installing this package (Windows/Linux)
 To install this package and its dependencies in a new conda environment, simply run:
 ```shell
 conda create -n week1 python=3.8 ipython jupyter notebook numpy scipy matplotlib pyaudio numba
