@@ -4,7 +4,7 @@ To install this package and its dependencies in a new conda environment, simply 
 conda create -n week1 python=3.8
 conda activate week1
 
-(week1) pip install -e cogworks_week1
+(week1) pip install cogworks_week1
 ```
 It is important that you use this `develop` install option, as the microphone configuration requires that
 this package is installed in-place.
@@ -16,7 +16,7 @@ conda create -n week1 python=3.8 ipython jupyter notebook numpy scipy matplotlib
 conda install -n week1 -c conda-forge librosa ffmpeg
 conda activate week1
 
-(week 1) pip install -e cogworks_week1
+(week 1) pip install cogworks_week1
 ```
 
 # Configuring Your Microphone
